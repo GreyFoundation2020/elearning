@@ -1,0 +1,62 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  @apply overflow-x-hidden;
+}
+
+body {
+  @apply text-base desktop:text-lg leading-7 text-gray-dark overflow-x-hidden relative;
+}
+header{
+      background: #e95a5a;
+    position: fixed;
+    display: flex;
+    width: 100%;
+}
+.grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.index{
+  z-index: -1;
+}
+
+@layer utilities {
+  .h1 {
+    @apply text-[40px] desktop:text-[56px] leading-[51px] desktop:leading-[70px];
+  }
+
+  .h2 {
+    @apply text-2xl desktop:text-[32px] leading-7 desktop:leading-10;
+  }
+ul{ sm:hidden;
+}
+  .h3 {
+    @apply text-xl desktop:text-2xl leading-[auto];
+  }
+
+  .primary-gradient {
+    @apply bg-gradient-to-b from-[#4851FF] to-[#F02AA6];
+  }
+
+  .secondary-gradient {
+    @apply  bg-gradient-to-b from-[#4354C9] to-[#CE8B97];
+  }
+
+  .light-gradient {
+    @apply bg-gradient-to-b from-[#ffffff] to-[#F0F1FF];
+  }
+
+  .container {
+    @apply max-w-[1142px] px-16  mx-auto;
+  }
+}
+
+
+@media  only screen and (max-width: 600px)   {
+  body{
+    display: grid;   
+}
+}
