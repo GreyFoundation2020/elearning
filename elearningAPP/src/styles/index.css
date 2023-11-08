@@ -66,6 +66,8 @@ header{
     padding-right: 2rem;
 }
 .list-section{
-  display:none;
+  display:flex;
+  flex-direction:column;
+  gap:2rem;
 }
 }
