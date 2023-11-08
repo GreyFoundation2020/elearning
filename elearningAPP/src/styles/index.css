@@ -31,8 +31,7 @@ header{
   .h2 {
     @apply text-2xl desktop:text-[32px] leading-7 desktop:leading-10;
   }
-ul{ sm:hidden;
-}
+
   .h3 {
     @apply text-xl desktop:text-2xl leading-[auto];
   }
@@ -50,13 +49,23 @@ ul{ sm:hidden;
   }
 
   .container {
-    @apply max-w-[1142px] px-16  mx-auto;
+    @apply max-w-[1142px] px-16  mx-auto ;
   }
 }
 
 
 @media  only screen and (max-width: 600px)   {
-  body{
-    display: grid;   
+  .grid{
+    display: inline;   
+}
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1142px;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+ul{
+  display:none;
 }
 }
