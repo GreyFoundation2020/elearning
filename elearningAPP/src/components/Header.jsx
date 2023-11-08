@@ -9,7 +9,7 @@ const Header = () => {
           <a href='#home'>
             <h1 className='w-[90px] text-white text-bold desktop:w-[auto]'>eLearningApp®</h1>
           </a>
-          <ul className="flex text-white justify-around w-6/12 text-xs">
+          <ul className="list-section flex text-white justify-around w-6/12 text-xs">
             <li><a href="#">Home</a></li>
             <li><a href="#">About</a></li>
             <li><a href="#">Courses</a></li>
