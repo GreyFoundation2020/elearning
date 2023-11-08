@@ -56,7 +56,9 @@ header{
 
 @media  only screen and (max-width: 600px)   {
   .grid{
-    display: inline;   
+   display:flex;
+  flex-direction:column;
+  gap:2rem;
 }
 .container {
     margin-left: auto;
@@ -66,8 +68,6 @@ header{
     padding-right: 2rem;
 }
 .list-section{
-  display:flex;
-  flex-direction:column;
-  gap:2rem;
+  display:none;
 }
 }
