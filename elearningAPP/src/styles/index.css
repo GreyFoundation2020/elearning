@@ -65,7 +65,7 @@ header{
     padding-left: 2rem;
     padding-right: 2rem;
 }
-ul{
+.list-section{
   display:none;
 }
 }
